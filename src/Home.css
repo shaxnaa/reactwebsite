@@ -1,0 +1,83 @@
+/* src/components/Home.css */
+
+/* Additional styles for the home section */
+.home-section {
+    background: url('https://example.com/home-bg.jpg') no-repeat center center/cover; /* Replace with your background image URL */
+    height: 80vh; /* Full viewport height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for small screens */
+    position: relative; /* For absolute positioning of overlay */
+}
+
+.home-section::before {
+    content: ''; /* Empty content for overlay */
+    position: absolute; /* Position it absolutely */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Behind text but above background */
+}
+
+.welcome {
+    position: relative; /* Position relative for stacking */
+    z-index: 2; /* Bring welcome text above the overlay */
+    padding: 30px; /* Padding inside the welcome section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Enhanced shadow effect */
+}
+
+.welcome h1 {
+    font-size: 4rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below heading */
+    text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+.welcome p {
+    font-size: 1.5rem; /* Slightly larger font size for the paragraph */
+    margin-bottom: 30px; /* Space below paragraph */
+    line-height: 1.6; /* Improve line spacing for readability */
+}
+
+.explore-button {
+    padding: 15px 30px; /* Padding for button */
+    background-color: #e94e77; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1.1rem; /* Font size for button */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.explore-button:hover {
+    background-color: #d45c7a; /* Darken button on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.testimonials {
+    margin-top: 50px; /* Space above testimonials */
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px; /* Padding for testimonial cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    margin: 20px 0; /* Space between cards */
+}
+
+.testimonial-card p {
+    font-style: italic; /* Italic for testimonial text */
+    color: #555; /* Dark gray text color */
+}
+
+.testimonial-card h4 {
+    margin-top: 10px; /* Space above author name */
+    font-weight: bold; /* Bold for author name */
+}

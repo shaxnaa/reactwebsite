@@ -1,0 +1,70 @@
+/* src/components/Destinations.css */
+
+/* Additional styles for the destinations section */
+.destinations-section {
+    padding: 50px 20px; /* Padding around the section */
+    background-color: #dcf8f1; /* Light background color */
+    
+    
+}
+
+.destinations-section h2 {
+    font-size: 2.5rem; /* Large font size for the heading */
+    margin-bottom: 30px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+    color: #333; /* Darker text color */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1px; /* Space between letters */
+}
+
+.destinations {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the destination cards */
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    gap: 20px; /* Increased space between cards */
+}
+
+.destination-card {
+    background: white; /* White background for cards */
+    border-radius: 12px; /* Slightly more rounded corners */
+    padding: 20px; /* Padding inside the cards */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    width: 300px; /* Increased width for cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transformations */
+    text-align: center; /* Center text */
+    overflow: hidden; /* Prevent overflow from content */
+    height: 400px;
+}
+
+.destination-card h3 {
+    margin: 15px 0; /* Space above and below the destination name */
+    font-size: 1.6rem; /* Slightly larger font size for the destination name */
+    color: #4a90e2; /* Color for the destination name */
+    text-transform: capitalize; /* Capitalize destination names */
+}
+
+.destination-card p {
+    color: #555; /* Dark gray text color for descriptions */
+    font-size: 1rem; /* Font size for descriptions */
+    line-height: 1.5; /* Improve line spacing for readability */
+}
+
+/* Hover effect for cards */
+.destination-card:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Styles for destination images */
+.destination-card img.destination-image {
+    width: 100%; /* Make image take full width of the card */
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crop image to fit */
+    border-radius: 8px 8px 0 0; /* Rounded corners on top */
+    transition: transform 0.3s ease; /* Smooth transition for image hover effect */
+}
+
+.destination-card:hover img.destination-image {
+    transform: scale(1.05); /* Slightly enlarge image on card hover */
+}

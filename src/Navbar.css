@@ -1,0 +1,127 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    color: white; /* White text color */
+    padding: 15px 20px; /* Padding around the navbar */
+     /* Fixed position on scroll */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it's above other elements */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth background transition */
+    width: 1850px;
+    
+    
+}
+
+.navbar:hover {
+    background-color: #444; /* Darker shade on hover */
+    text-decoration: underline;
+}
+
+.navbar-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-logo {
+    font-size: 2rem; /* Larger font size for the logo */
+    font-weight: bold; /* Bold font for emphasis */
+    transition: transform 0.3s; /* Animation for logo */
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge logo on hover */
+}
+
+.navbar-menu {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Horizontal layout */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-menu li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+.navbar-menu a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, transform 0.2s; /* Smooth color and transform transitions */
+    font-size:larger;
+    font-weight:900;
+    font-style: italic;
+}
+
+.navbar-menu a:hover {
+    color: #ef9a8b; /* Change color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    background: transparent;
+    border: none;
+    color: white; /* Button color */
+    font-size: 1.5rem; /* Icon size */
+    cursor: pointer; /* Pointer cursor */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .navbar-menu {
+        flex-direction: column; /* Vertical menu layout */
+        width: 100%; /* Full width for menu */
+        display: none; /* Hide menu by default */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Show menu when active */
+        animation: slideIn 0.3s ease; /* Slide-in animation for menu */
+    }
+
+    .navbar-menu li {
+        margin: 10px 0; /* Space between menu items */
+        opacity: 0; /* Initially hidden for animation */
+        animation: fadeIn 0.3s forwards; /* Fade-in animation */
+    }
+
+    /* Delayed animation for each menu item */
+    .navbar-menu li:nth-child(1) { animation-delay: 0.1s; }
+    .navbar-menu li:nth-child(2) { animation-delay: 0.2s; }
+    .navbar-menu li:nth-child(3) { animation-delay: 0.3s; }
+    .navbar-menu li:nth-child(4) { animation-delay: 0.4s; }
+
+    .menu-toggle {
+        display: block; /* Show the menu toggle button */
+        margin-left: auto; /* Align to the right */
+    }
+}
+
+/* Keyframe Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Slide in from the top */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        opacity: 1; /* Fully visible */
+    }
+}

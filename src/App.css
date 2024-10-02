@@ -1,0 +1,104 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  background: #4a90e2;
+  padding: 15px;
+  color: white;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.home-section {
+  background: url('https://example.com/home-bg.jpg') no-repeat center center/cover;
+  padding: 100px 0;
+  color: white;
+}
+
+.welcome {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.explore-button {
+  padding: 10px 20px;
+  background-color: #e94e77;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.destinations-section {
+  padding: 50px 20px;
+}
+
+.destinations {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.destination-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+}
+
+.booking-section, .contact-section {
+  padding: 50px 20px;
+}
+
+.booking-form, .contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #357ABD;
+}

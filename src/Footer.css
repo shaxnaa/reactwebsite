@@ -1,0 +1,55 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #4a90e2; /* Footer background color */
+    color: white; /* Text color */
+    padding: 40px 20px; /* Padding for the footer */
+    text-align: center; /* Center text */
+    height: 200px;
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-bottom: 20px; /* Space below footer content */
+}
+
+.footer-links,
+.footer-contact,
+.footer-social {
+    flex: 1; /* Each section takes equal space */
+    min-width: 200px; /* Minimum width for responsiveness */
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+    margin-bottom: 15px; /* Space below section titles */
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links a,
+.footer-social a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #d4edda; /* Change color on hover */
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Top border for separation */
+    padding-top: 10px; /* Space above bottom section */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove margin */
+}
